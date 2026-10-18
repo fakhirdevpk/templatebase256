@@ -1,0 +1,63 @@
+{
+    "labels": {
+        "default": {
+            "list-links": {
+                "home": {
+                    "name": "Home",
+                    "descr": "lovely home",
+                    "url": ""
+                },
+                "about": {
+                    "name": "About us",
+                    "descr": "me?",
+                    "url": "/about"
+                }
+            },
+            "business": {
+                "company": {
+                    "name": "Dolardo Enterprises",
+                    "phone-format": "+92",
+                    "phone": "03188869599",
+                    "zip": "",
+                    "adress": "",
+                    "adress2": "",
+                    "branches": {
+                        "pakistan": {
+                            "karachi": {
+                                "a1": {
+                                    "name": "",
+                                    "descr": "",
+                                    "type": "",
+                                    "url": ""
+                                }
+                            }
+                        },
+                        "employees": {
+                            "amina": {
+                                "fname": "amina",
+                                "lname": "chandio",
+                                "role": "",
+                                "residency": "",
+                                "age": 2,
+                                "email": "",
+                                "password": "",
+                                "phone": "",
+                                "date-joined": "",
+                                "activeTime": "",
+                                "timeZone": "",
+                                "retired": false,
+                                "fired": false,
+                                "zip": 14026,
+                                "yoe": 2,
+                                "isActiveRightNow": true,
+                                "isEmployeed": true
+                            }
+                        }
+                    }
+                },
+                "hello": "hello, world!"
+            },
+            "something": {}
+        }
+    }
+}

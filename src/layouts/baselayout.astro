@@ -1,0 +1,14 @@
+---
+import HEADER from "../components/header.astro";
+import json from "../data/label.json";
+const title = json.labels.default["list-links"].home.name;
+---
+
+<html lang="en">
+  <head>
+    <HEADER title={title} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
