@@ -1,3 +1,12 @@
+---
+let todayDate = new Date();
+let currentYear = todayDate.getFullYear();
+---
+
 <footer>
-  <slot />
+  <div style="display: flex; justify-content: center;">
+    <p>{currentYear}</p>
+    <p>@</p>
+    <p>ltd</p>
+  </div>
 </footer>

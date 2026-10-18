@@ -1,0 +1,229 @@
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$breakpoints: (
+  mobile: 320px,
+  tablet: 740px,
+  desktop: 980px,
+  wide: 1300px,
+  // Tweakpoints
+  desktopAd: 810px,
+  mobileLandscape: 480px,
+);
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width. For examples: (mobile, tablet, desktop).
+$show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+
+@use "../../node_modules/sass-mq/mq" with (
+  $breakpoints: $breakpoints,
+  $show-breakpoints: $show-breakpoints
+);
+
+/* Medium Weight (500) */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold Weight (600) */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold Weight (700) */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: poppins, sans-serif, verdana;
+  font-size: 1rem;
+  font-style: normal;
+  font-display: swap;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: oklch(20% 0.00002 271.152);
+  background-color: oklch(100% 0 271.152);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 98%;
+  margin: auto;
+  padding: 0.15rem;
+  border: 1px solid #b4b4b4;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+header,
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+a {
+  color: #0e466b;
+}
+
+.navi {
+  background-color: #262626;
+  padding: 0;
+  margin: 0;
+}
+
+.navi a,
+li {
+  color: #fff;
+  background-color: #414141;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 2rem;
+
+  padding: 0rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-indent: 0%;
+  font-weight: 400;
+  font-style: none;
+  text-align: left;
+  text-align-last: justify;
+  text-decoration: none;
+  text-overflow: clip;
+  transition: 120ms;
+}
+
+.field {
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #ececec;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border-color: none;
+  border: none;
+}
+
+input:hover {
+  border-color: #e7e7e7;
+  border: none;
+  border: 1px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input:focus {
+  border-color: #e7e7e7;
+  border: none;
+  border: 1px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input:focus-visible {
+  border-color: #e7e7e7;
+  border: none;
+  border: 1px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input:active {
+  border-color: #e7e7e7;
+  border: none;
+  border: 1px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input:select {
+  border-color: #e7e7e7;
+  border: none;
+  border: 1px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.input-box {
+  padding: 0;
+  margin: 0;
+  min-width: 5rem;
+  max-width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+button {
+  background-color: #2d2d2d;
+  color: #fff;
+  font-size: 0.7.5rem;
+  min-width: 5rem;
+  max-width: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 30px;
+  margin: 0;
+  border-color: none;
+  border: none;
+  transition: 350ms;
+}
+
+a {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #ececec;
+  color: #3e3e3e;
+  transition: 350ms;
+  -webkit-user-select: all;
+  user-select: all;
+  cursor: pointer;
+}

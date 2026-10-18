@@ -8,9 +8,6 @@ import "../style/main.css";
 // labels
 const title = json.labels.default["list-links"].home.name;
 const company = json.labels.default.business.company.name;
-
-let todayDate = new Date();
-let currentYear = todayDate.getFullYear();
 ---
 
 <Baselayout>
@@ -20,19 +17,15 @@ let currentYear = todayDate.getFullYear();
         <a href=""><li>hello</li></a>
       </div>
     </NAVBAR>
-    <h3>{title}</h3>
-    <p>{company}</p>
-    <div class="input-box">
-      <input id="classful" class="field" placeholder="name" type="text" />
-      <button id="prototype">somethin</button>
-    </div>
-    <p>error :</p>
-    <FOOTER>
-      <div style="display: flex; justify-content: center;">
-        <p>{currentYear}</p>
-        <p>@</p>
-        <p>ltd</p>
+    <section>
+      <h3>{title}</h3>
+      <p>{company}</p>
+      <div class="input-box">
+        <input id="classful" class="field" placeholder="name" type="text" />
+        <button id="prototype">something</button>
       </div>
-    </FOOTER>
+      <p>error :</p>
+    </section>
+    <FOOTER />
   </section>
 </Baselayout>
