@@ -4,25 +4,30 @@ import NAVBAR from "../components/navbar.astro";
 import FOOTER from "../components/footer.astro";
 import json from "../data/label.json";
 import "../style/main.css";
+import type { any, JSONType, unknown } from "astro:schema";
+import type { JSONArray, JSONObject } from "hono/utils/types";
 
 // labels
 const title = json.labels.default["list-links"].home.name;
 const company = json.labels.default.business.company.name;
+
+let mapURL = json.labels.default["list-links"];
+
+function callURL(list: JSONObject, item: JSONType) {
+  list.forEach((item: JSONObject) => {
+  });
+}
 ---
 
 <Baselayout>
   <section class="container">
-    <NAVBAR>
-      <div class="navi">
-        <a href=""><li>hello</li></a>
-      </div>
-    </NAVBAR>
+    <NAVBAR />
     <section>
       <h3>{title}</h3>
       <p>{company}</p>
       <div class="input-box">
         <input id="classful" class="field" placeholder="name" type="text" />
-        <button id="prototype">something</button>
+        <button id="prototype">post</button>
       </div>
       <p>error :</p>
     </section>
