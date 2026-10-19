@@ -2,21 +2,12 @@
 import Baselayout from "../layouts/baselayout.astro";
 import NAVBAR from "../components/navbar.astro";
 import FOOTER from "../components/footer.astro";
-import json from "../data/label.json";
+import { title, company } from "../constants/header.ts";
 import "../style/main.css";
-import type { any, JSONType, unknown } from "astro:schema";
-import type { JSONArray, JSONObject } from "hono/utils/types";
 
 // labels
-const title = json.labels.default["list-links"].home.name;
-const company = json.labels.default.business.company.name;
 
-let mapURL = json.labels.default["list-links"];
-
-function callURL(list: JSONObject, item: JSONType) {
-  list.forEach((item: JSONObject) => {
-  });
-}
+// 1. Grab the nested object from your JSON
 ---
 
 <Baselayout>

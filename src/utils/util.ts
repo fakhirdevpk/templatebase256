@@ -102,3 +102,16 @@ function validEmail(email: validator) {}
 function validPassword(password: validator) {}
 function validPhone(phone: validator) {}
 function validDate(date: validator) {}
+
+// maps
+export function mapJsonURL(linksObj: Record<string, any>) {
+  return Object.values(linksObj).map((item) => {
+    // Return a fresh, isolated clone/transformation of each item
+    return {
+      name: item.name,
+      descr: item.descr,
+      url: item.url,
+      status: item.status, // true/false ready for your future toggle logic
+    };
+  });
+}
