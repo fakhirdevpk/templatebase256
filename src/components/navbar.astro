@@ -13,9 +13,7 @@ const processedLinks = mapJsonURL(dataUrls);
         {
           processedLinks.map((link) => (
             <li>
-              <a style="color: #fff;" href={link.url}>
-                {link.name}
-              </a>
+              <a href={link.url}>{link.name}</a>
             </li>
           ))
         }

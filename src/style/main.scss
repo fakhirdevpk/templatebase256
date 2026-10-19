@@ -1,28 +1,37 @@
 * {
   font-family: poppins, sans-serif, verdana;
-  box-sizing: border-box;
-  justify-content: baseline;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  display: flexbox;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
   font-size: 1rem;
   font-weight: 400;
-  font-display: block;
-  font-style: normal;
   text-indent: 0%;
+  font-style: normal;
   text-transform: capitalize;
-  text-align: center;
-  text-overflow: clip;
-  text-wrap-mode: wrap;
   text-decoration: none;
   text-overflow: clip;
+  text-align: start;
+  list-style: none;
   color: #161616;
 }
 
-body {
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+nav,
+ul {
   display: flex;
-  justify-self: start;
-  align-items: start;
-  margin-left: auto;
+  justify-self: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 95%;
+  margin: auto;
   margin-right: auto;
 }
