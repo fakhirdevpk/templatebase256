@@ -26,15 +26,15 @@ interface validator {
 // _______________________________________
 
 export function fetchDate() {
-  let todayDate = new Date();
-  let year = todayDate.getFullYear;
-  let month = todayDate.getMonth;
-  let day = todayDate.getDay;
-  let time = todayDate.getTime;
-  let hour = todayDate.getHours;
-  let minutes = todayDate.getHours;
-  let seconds = todayDate.getSeconds;
-  let utcYear = todayDate.getFullYear();
+  const todayDate = new Date();
+  const year = todayDate.getFullYear;
+  const month = todayDate.getMonth;
+  const day = todayDate.getDay;
+  const time = todayDate.getTime;
+  const hour = todayDate.getHours;
+  const minutes = todayDate.getHours;
+  const seconds = todayDate.getSeconds;
+  const utcYear = todayDate.getFullYear();
 }
 
 export function convertDate(date: any) {
@@ -97,11 +97,11 @@ export function counter(
   return num;
 }
 
-function validName(name: validator) {}
-function validEmail(email: validator) {}
-function validPassword(password: validator) {}
-function validPhone(phone: validator) {}
-function validDate(date: validator) {}
+// function validName(name: validator) {}
+// function validEmail(email: validator) {}
+// function validPassword(password: validator) {}
+// function validPhone(phone: validator) {}
+// function validDate(date: validator) {}
 
 // maps
 export function mapJsonURL(linksObj: Record<string, any>) {

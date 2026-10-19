@@ -1,27 +1,15 @@
 ---
 import Baselayout from "../layouts/baselayout.astro";
-import NAVBAR from "../components/navbar.astro";
-import FOOTER from "../components/footer.astro";
-import { title, company } from "../constants/header.ts";
-import "../style/main.css";
-
-// labels
-
-// 1. Grab the nested object from your JSON
+import { title, company } from "../constants/constants";
 ---
 
 <Baselayout>
-  <section class="container">
-    <NAVBAR />
-    <section>
-      <h3>{title}</h3>
-      <p>{company}</p>
-      <div class="input-box">
-        <input id="classful" class="field" placeholder="name" type="text" />
-        <button id="prototype">post</button>
-      </div>
-      <p>error :</p>
-    </section>
-    <FOOTER />
+  <section>
+    <h3>{title}</h3>
+    <p>{company}</p>
+    <div class="input-box">
+      <input id="classful" class="field" placeholder="name" type="text" />
+      <button id="prototype">post</button>
+    </div>
   </section>
 </Baselayout>

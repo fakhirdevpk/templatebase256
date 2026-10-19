@@ -1,12 +1,22 @@
 ---
-
+// functions
+import { mapJsonURL } from "../utils/util";
+// data
+import { urlList } from "../constants/constants";
+const processedLinks = mapJsonURL(urlList);
 ---
 
 <header>
   <nav>
     <ul>
-      <div class="navi">
-        <a href=""><li>hello</li></a>
+      <div style="display: flex; flex-direction:row; justify-content: center;">
+        {
+          processedLinks.map((link) => (
+            <li>
+              <a style="color: #fff;" href={link.url}>{link.name}</a>
+            </li>
+          ))
+        }
       </div>
     </ul>
   </nav>

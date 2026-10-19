@@ -1,0 +1,23 @@
+---
+import Header from "../components/header.astro";
+import { configBusiness, dataUrls } from "../constants/constants";
+import "../style/main.css";
+
+const title = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <Header title={dataUrls.home} />
+  </head>
+  <body>
+    <section class="container">
+      <section class="auth">
+        <h2>Your at AAAAAAAAAUTH page</h2>
+        <h6>{title}</h6>
+        <hr />
+        <div><slot /></div>
+      </section>
+    </section>
+  </body>
+</html>
