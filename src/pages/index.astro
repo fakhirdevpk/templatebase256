@@ -1,12 +1,14 @@
 ---
 import Baselayout from "../layouts/baselayout.astro";
-import { title, company } from "../constants/constants";
+import { business } from "../config/business.json";
+import { dataUrls} from "../constants/constants";
+const title = dataUrls.home.name;
 ---
 
 <Baselayout>
   <section>
-    <h3>{title}</h3>
-    <p>{company}</p>
+    <h1>{title}</h1>
+    <p>{business.name}</p>
     <div class="input-box">
       <input id="classful" class="field" placeholder="name" type="text" />
       <button id="prototype">post</button>

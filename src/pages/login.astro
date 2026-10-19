@@ -1,8 +1,13 @@
 ---
+import Auth from "../layouts/auth.astro";
 import "../style/main.css";
+import { dataUrls } from "../constants/constants";
 ---
 
-<h6>Your at login page</h6>
-<p>
-  go back to <a href="">home</a>
-</p>
+<Auth>
+  <h6>Your at {dataUrls.login.name} page</h6>
+  <p>
+    go back to <a href={dataUrls.home.url}>{dataUrls.home.name}</a>
+    switch to <a href={dataUrls.sign.url}>{dataUrls.sign.name}</a>
+  </p>
+</Auth>
