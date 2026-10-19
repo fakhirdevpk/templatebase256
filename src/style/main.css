@@ -1,241 +1,28 @@
-/* @font-face {
-  font-family: 'Poppins';
-  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-} */
-
 * {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   font-family: poppins, sans-serif, verdana;
-  font-size: 1rem;
-  font-style: normal;
-  font-display: swap;
   box-sizing: border-box;
+  justify-content: baseline;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  text-indent: 0%;
   font-weight: 400;
-  font-style: none;
-  text-align: left;
-  text-align-last: justify;
+  font-display: block;
+  font-style: normal;
+  text-indent: 0%;
+  text-transform: capitalize;
+  text-align: center;
+  text-overflow: clip;
+  text-wrap-mode: wrap;
   text-decoration: none;
   text-overflow: clip;
+  color: #161616;
 }
-
-
 
 body {
+  display: flex;
+  justify-self: start;
+  align-items: start;
   margin-left: auto;
   margin-right: auto;
-  margin: 0;
-  padding: 0;
-  color: oklch(20% 0.00002 271.152);
-  background-color: oklch(100% 0 271.152);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 99%;
-  margin: auto;
-  padding: .15rem;
-  font-size: 1rem;
-}
-
-
-a {
-   display: flex;
-   justify-self: center;
-   align-items: center;
-   flex-direction: column;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  text-transform: capitalize;
-}
-
-header,
-nav,
-ul {
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-}
-
-
-
-.field {
-  -webkit-user-select: none;
-  user-select: none;
-  background-color: #ececec;
-  width: 100%;
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  border-color: none;
-  border: none;
-}
-
-
-input:hover {
-  border-color: #e7e7e7;
-  border: none;
-  border: 1px;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-input:focus {
-  border-color: #e7e7e7;
-  border: none;
-  border: 1px;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-input:focus-visible {
-  border-color: #e7e7e7;
-  border: none;
-  border: 1px;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-input:active {
-  border-color: #e7e7e7;
-  border: none;
-  border: 1px;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-input:select {
-  border-color: #e7e7e7;
-  border: none;
-  border: 1px;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.input-box {
-  padding: 0;
-  margin: 0;
-  min-width: 5rem;
-  max-width: 100%;
-  height: max-content;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-
-button {
-  background-color: #2d2d2d;
-  color: #fff;
-  font-size: .7.5rem;
-  min-width: 5rem;
-  max-width: 100%;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  height: 30px;
-  margin: 0;
-  border-color: none;
-  border: none;
-  transition: 350ms;
-}
-
-
-
-button:hover {
-  background-color: #ececec;
-  color: #3e3e3e;
-  transition: 350ms;
-  -webkit-user-select: all;
-  user-select: all;
-  cursor: pointer;
-}
-
-
-
-
-nav {
-  background-color: #414141;
-}
-
-a,
-li {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  -webkit-user-select: none;
-  user-select: none;
-  color: #0e466b;
-  text-decoration: none;
-  transition: 200ms;
-  padding: 1rem;
-  padding-top: 1.5rem;
-  min-width: 6rem;
-  justify-content: left;
-  height: max-content;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: none;
-  transition: 220ms;
-  background-color: #595959;
-}
-
-
-li:nth-child(4) a {
-  background-color: #ff6347;
-  width: 100%;
-}
-
-li:nth-child(4) {
-  margin-left: 40%;
-}
-
-li:nth-child(4) a:hover {
-  background-color: #ff8c4e;
-}
+}/*# sourceMappingURL=main.css.map */
