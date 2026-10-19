@@ -14,6 +14,7 @@
   text-decoration: none;
   text-overflow: clip;
   text-align: start;
+  align-items: center;
   list-style: none;
   color: #161616;
 }
@@ -27,11 +28,22 @@ nav,
 ul {
   display: flex;
   justify-self: center;
-  align-items: center;
 }
 
 .main-container {
   width: 95%;
   margin: auto;
   margin-right: auto;
+}
+
+button {
+  min-width: 3rem;
+  max-width: 6rem;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
