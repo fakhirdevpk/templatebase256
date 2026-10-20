@@ -1,0 +1,49 @@
+* {
+  font-family: poppins, sans-serif, verdana;
+  margin: 0;
+  padding: 0;
+  display: flexbox;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 400;
+  text-indent: 0%;
+  font-style: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-overflow: clip;
+  text-align: start;
+  align-items: center;
+  list-style: none;
+  color: #161616;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+nav,
+ul {
+  display: flex;
+  justify-self: center;
+}
+
+.main-container {
+  width: 95%;
+  margin: auto;
+  margin-right: auto;
+}
+
+button {
+  min-width: 3rem;
+  max-width: 6rem;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
