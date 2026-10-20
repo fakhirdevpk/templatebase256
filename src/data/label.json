@@ -1,0 +1,38 @@
+{
+    "labels": {
+        "default": {
+            "list-links": {
+                "home": {
+                    "name": "Home",
+                    "descr": "lovely home",
+                    "url": "/",
+                    "status": true
+                },
+                "about": {
+                    "name": "About",
+                    "descr": "me?",
+                    "url": "/about",
+                    "status": true
+                },
+                "contact": {
+                    "name": "Contact us",
+                    "descr": "",
+                    "url": "/contact",
+                    "status": true
+                },
+                "sign": {
+                    "name": "sign in",
+                    "descr": "",
+                    "url": "/sign",
+                    "status": true
+                },
+                "login": {
+                    "name": "log in",
+                    "descr": "",
+                    "url": "/login",
+                    "status": true
+                }
+            }
+        }
+    }
+}

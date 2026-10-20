@@ -1,0 +1,22 @@
+---
+import Header from "../components/header.astro";
+import { configBusiness } from "../constants/constants";
+const title = Astro.props;
+import "../styles/style.scss";
+---
+
+<html lang="en">
+  <head>
+    <Header title={title} />
+  </head>
+  <body>
+    <section class="container">
+      <section class="auth">
+        <h1>{title}</h1>
+        <h2>{configBusiness.name}</h2>
+        <hr />
+        <div><slot /></div>
+      </section>
+    </section>
+  </body>
+</html>
