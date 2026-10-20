@@ -25,5 +25,8 @@
     "sass": "^1.105.2",
     "sass-mq": "^7.0.1",
     "svelte": "^5.57.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.3"
   }
 }

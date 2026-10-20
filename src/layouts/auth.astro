@@ -1,13 +1,7 @@
 ---
-import Header from "../components/header.astro";
-import { configBusiness } from "../constants/constants";
+import Header from "../components/Header.astro";
 const title = Astro.props;
-<<<<<<< HEAD
-import "../styles/style.scss";
-=======
-const sass = require('sass');
-import "../style/main.css";
->>>>>>> bf24e54250f6e3d596517374c904e2226a65bbbe
+import "../styles/style.sass";
 ---
 
 <html lang="en">
@@ -17,15 +11,8 @@ import "../style/main.css";
   <body>
     <section class="container">
       <section class="auth">
-        <h1>{title}</h1>
-        <h2>{configBusiness.name}</h2>
-        <hr />
         <div><slot /></div>
       </section>
     </section>
   </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> bf24e54250f6e3d596517374c904e2226a65bbbe

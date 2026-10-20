@@ -119,7 +119,4 @@ export function countLetters(text: validator) {
   const letters = text.text.match(/[A-Za-z]/g) ?? [];
   return { count: letters.length, letters };
 }
-export function countNumbers(number: number) {
-  const letters = text.match(/[A-Za-z]/g) ?? [];
-  return { count: letters.length, letters };
-}
+

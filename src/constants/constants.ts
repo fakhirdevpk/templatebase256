@@ -16,3 +16,15 @@ export const configBusiness = cfgBusiness.business;
 export const configSiteToggle = cfgSite["components-toggle"];
 export const configSiteHTTP = cfgSite.http;
 export const configSiteServef = cfgSite.server;
+// Constans ~ Names
+export const titleHome = dataUrls.home.name;
+export const titleLogin = dataUrls.login.name;
+export const titleSignIn = dataUrls.sign.name;
+export const titleAbout = dataUrls.about.name;
+export const titleContact = dataUrls.contact.name;
+// Constans ~ Pages
+export const linkHome = dataUrls.home.url;
+export const linkLogin = dataUrls.login.url;
+export const linkSignIn = dataUrls.sign.url;
+export const linkAbout = dataUrls.about.url;
+export const linkContact = dataUrls.contact.url;

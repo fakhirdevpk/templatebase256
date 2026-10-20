@@ -1,14 +1,5 @@
-@import "./base/_base.sass";
-@import "./base/_components.sass";
+@import "./components/defaults"
+@import "./utils/_mixins.sass"
 
-button 
-  min-width: 3rem;
-  max-width: 6rem;
-  padding: 1rem;
-  font-weight: 600;
-  font-size: 0.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-
+body
+  @include bodyDefault
